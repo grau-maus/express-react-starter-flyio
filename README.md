@@ -38,7 +38,7 @@ This is the starter for the Express React project.
 
 ## Deploy to Fly.io
 
-1. Before you deploy, don't forget to navigate into your `frontend` directory and run the following command in order to create a production build for deployment.
+1. Before you deploy, don't forget to navigate into your `frontend` directory and run the following command in order to create a production build for deployment:
 
    ```bash
    npm run build
@@ -74,13 +74,20 @@ This is the starter for the Express React project.
     fly secrets set JWT_SECRET=<your secret key> JWT_EXPIRES_IN=604800
     ```
 
-11. Deploy your app:
+11. Open up `fly.toml` (this file gets generated during `fly launch`), add the following snippet, and save:
+
+    ```
+    [deploy]
+       release_command = "bash release.sh"
+    ```
+
+12. Deploy your app:
 
     ```bash
     fly deploy
     ```
 
-12. profit
+13. profit
 
 ### For M1 Mac users
 
