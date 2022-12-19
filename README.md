@@ -34,7 +34,7 @@ This is the starter for the Express React project.
    npm start
    ```
 
-6. To run the React App in development, checkout the [README](./react-app/README.md) inside the `react-app` directory.
+6. To run the React App in development, checkout the [README](./frontend/README.md) inside the `react-app` directory.
 
 ## Deploy to Fly.io
 
